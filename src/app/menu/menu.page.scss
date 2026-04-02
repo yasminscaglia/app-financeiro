@@ -1,0 +1,107 @@
+.phone{
+  padding: 14px 16px 12px;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #26215C;
+  margin: 0;
+}
+
+.toolbar-sub {
+  font-size: 14px;
+  color: #7f77dd;
+  margin: 2px 0 0;
+  font-weight: 400;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 0.5px solid #CECBF6;
+  padding: 22px 16px 18px;
+}
+
+.lc-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888780;
+  text-align: center;
+  margin: 0 0 4px;
+}
+
+.menu-card {
+  --background: #fff;
+  --border-radius: 14px;
+  --border-color: #E8E6F0;
+  --border-width: 0.5px;
+  --border-style: solid;
+  --padding-start: 25px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --inner-padding-end: 0;
+  margin-bottom: 10px;
+
+}
+
+.menu-cadastro {
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 0 2px;
+      color: #3C3489;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 0;
+      color: #7f77dd;
+    }
+  }
+
+.menu-receber {
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    color: #185FA5;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0;
+    color: #85B7EB;
+  }
+}
+
+.menu-pagar {
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    color: #993556;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0;
+    color: #ED93B1;
+  }
+}
+
+.menu-sair {
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    color: #712B13;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0;
+    color: #D85A30;
+  }
+}

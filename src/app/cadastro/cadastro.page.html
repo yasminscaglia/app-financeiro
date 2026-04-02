@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="phone">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    
+    <ion-title class="toolbar-title">Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="login-card">
+    <ion-card-header>
+      <ion-card-title class="lc-title">Novo Cadastro</ion-card-title>
+    </ion-card-header>
+
+  <ion-card-content>
+    <ion-item class="custom-item" lines="none">
+      <ion-label position="stacked" class="field-ion-label">Nome</ion-label>
+      <ion-input class="field-input" [(ngModel)]="cadastro.nome" placeholder="Nome Completo" class="field-input"></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-item" lines="none">
+      <ion-label position="stacked" class="field-ion-label">Tipo (F ou C)</ion-label>
+      <ion-input class="field-input" [(ngModel)]="cadastro.tipo" placeholder="F - Fornecedor ou C - Cliente"></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-item" lines="none">
+      <ion-label position="stacked" class="field-ion-label">Endereço</ion-label>
+      <ion-input class="field-input" [(ngModel)]="cadastro.endereco" placeholder="Endereço Completo"></ion-input>
+    </ion-item>
+
+    <ion-button class="btn-login" expand="block" (click)="salvarCadastro()">Salvar Cadastro</ion-button>
+    <ion-button class="btn-sec" expand="block" (click)="limparFormulario()">Limpar</ion-button>
+  </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+
+    <ion-card-title class="lc-title">Cadastros</ion-card-title>
+    </ion-card-header>
+
+    <ion-list *ngIf="usuariosCadastrados.length > 0;">
+
+    <ion-item *ngFor="let item of usuariosCadastrados; let i = index;">
+      
+      <ion-label>
+        <h2 class="li-name">{{ item.nome }}</h2>
+        <p class="li-info">{{ item.endereco }}</p>
+      </ion-label>
+
+      <ion-buttons slot="end" class="acoes-direita">
+        <span class="tipo-pill">{{ item.tipo }}</span>
+        <ion-button 
+          class="excluir" 
+          fill="clear" 
+          (click)="excluirCadastro(i)">
+          Excluir
+        </ion-button>
+      </ion-buttons>
+
+    </ion-item>
+
+    </ion-list>
+  </ion-card>
+</ion-content>

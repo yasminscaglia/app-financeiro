@@ -1,0 +1,138 @@
+.phone{
+  padding: 14px 16px 12px;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #26215C;
+  margin: 0;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 0.5px solid #CECBF6;
+  padding: 22px 16px 18px;
+}
+
+.lc-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #3C3489;
+  text-align: center;
+  margin: 0 0 3px;
+}
+
+.field-ion-label {
+  color: #3C3489 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  position: relative !important;
+  transform: none !important;
+  margin-bottom: 4px;
+  --background: transparent;
+}
+
+.custom-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --padding-end: 0;
+}
+
+.field-input {
+  --placeholder-color: #AFA9EC;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid #AFA9EC;
+  font-size: 15px;
+  margin-bottom: 4px;
+  background: #F4F3FE;
+}
+
+.btn-login {
+  --background: #534AB7;
+  --background-hover: #6b63c9;
+  --color: #EEEDFE;
+  --border-radius: 10px;
+  --box-shadow: none;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 8px;
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+
+.btn-sec {
+  --background: #EEEDFE;
+  --background-hover: #6b63c9;
+  --color: #534AB7;
+  --border-radius: 10px;
+  --box-shadow: none;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 8px;
+  letter-spacing: 0.3px;
+  width: 100%;
+
+}
+
+.li-name {
+  color: #3C3489;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.li-info {
+  color: #6b63c9;
+  font-size: 12px;
+  margin: 0;
+}
+
+
+
+ion-item::part(native) {
+  align-items: flex-start;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.acoes-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+  gap: 4px;
+}
+
+/* Pill menor */
+.tipo-pill {
+  background: #D2F7F7;
+  color: #169E9E;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+
+  width: fit-content;
+}
+
+.excluir {
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-height: 0;
+
+  background: #FFE5F0;
+  color: #AD0935;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}

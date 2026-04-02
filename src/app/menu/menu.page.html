@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="phone">
+    <p class="toolbar-title">Menu Financeiro</p>
+    <p class="toolbar-sub">Olá, usuário</p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card login-card>
+    <ion-card-title class="lc-title">O que deseja fazer?</ion-card-title>
+
+
+    <ion-card-content>
+      <ion-item button="true" class="menu-card" (click)="areaDeCadastro()">
+        <ion-label class="menu-cadastro">
+          <h2>Cadastro</h2>
+          <p>Cliente/Fornecedor</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item button="true" class="menu-card" (click)="areaDeRecebimento()">
+        <ion-label class="menu-receber">
+          <h2>Contas a Receber</h2>
+          <p>Gerencie seus recebimentos</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item button="true" class="menu-card" (click)="areaDePagamento()">
+        <ion-label class="menu-pagar">
+          <h2>Contas a Pagar</h2>
+          <p>Gerencie seus pagamentos</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item button="true" class="menu-card" (click)="sair()">
+        <ion-label class="menu-sair">
+          <h2>Sair</h2>
+          <p>Encerrar sessão</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
