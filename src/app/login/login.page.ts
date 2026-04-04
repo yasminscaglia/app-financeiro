@@ -30,6 +30,10 @@ export class LoginPage implements OnInit {
     }
 
     this.router.navigate(['/menu'])
+    this.login = {
+      nome: '',
+      senha: '',
+    }
   }
 
 
